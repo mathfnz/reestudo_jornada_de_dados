@@ -13,7 +13,7 @@ def main() -> None:
     total_salary = base_salary + bonus_value
 
     print("\n--- Salary Summary ---")
-    print(f"Employee: {name}")
+    print(f"Employee: {name.title()}")
     print(f"Base Salary:      ${base_salary:,.2f}")
     print(f"Bonus ({bonus_percentage}%): + ${bonus_value:,.2f}")
     print("--------------------------")
