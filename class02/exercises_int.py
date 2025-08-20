@@ -40,7 +40,7 @@ def calculate_rest (n1: int) -> int:
     """
     return n1 % 5
 
-def main() -> None:
+def main2() -> None:
     try:
         number1: int = int(input(f"Type your number: "))
         
@@ -49,9 +49,62 @@ def main() -> None:
     except ValueError as ve:
         print(f"You have an error: {ve}")
         
-main()
+main2()
 
 # %%
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+def calculate_mult(n1: int, n2: int) -> int:
+    return n1 * n2
+
+
+def main3() -> None:
+    try:
+        number1: int = int(input("Type the first number: "))
+        number2: int = int(input("Type the second number: "))
+        mult: int = calculate_mult(n1=number1, n2=number2)
+        
+        print(f"{number1} * {number2} = {mult}")
+    except ValueError as ve:
+        print(f"You have an error: {ve}")
+
+main3()
+
+
+
+
+
+# %%
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+
+def calculate_div(n1: int, n2: int) -> int:
+    return n1 // n2
+
+
+def main4() -> None:
+    try:
+        number1: int = int(input("Type the first number: "))
+        number2: int = int(input("Type the second number: "))
+        div: int = calculate_div(n1=number1, n2=number2)
+        
+        print(f"{number1} // {number2} = {div}")
+    except ValueError as ve:
+        print(f"You have an error: {ve}")
+
+main4()
+# %%
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+
+def calculate_sqr(n1: int) -> int:
+    return n1 ** 2
+
+
+def main5() -> None:
+    try:
+        number1: int = int(input("Type the first number: "))
+        sqrt: int = calculate_sqr(n1=number1)
+        
+        print(f"{number1} ˆ 2 = {sqrt}")
+    except ValueError as ve:
+        print(f"You have an error: {ve}")
+
+main5()
