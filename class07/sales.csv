@@ -1,0 +1,7 @@
+product, price, delivered
+mouse, 250, False
+keyboard, 420, True
+table, 320, True
+monitor, 277.20, True
+keypad, 25.99, False
+MacBook, 3.250, False
