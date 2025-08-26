@@ -16,3 +16,17 @@ def main() -> None:
     print(avg_list)
 if __name__ == "__main__":
     main()
+    
+# %%
+# Converter Celsius para Fahrenheit em uma Lista
+
+def celsius_to_fahrenheit(list_temperature: list[float]) -> list[float]:
+    fahrenheit = [temperature * 1.8 + 32 for temperature in list_temperature]
+    return fahrenheit
+
+def main2() -> None:
+    celsius: list = [33.8, 39, 27.8, 9, -2, 0, 11, 34, 24.8]
+    result = celsius_to_fahrenheit(list_temperature=celsius)
+    print(f"{result}")
+if __name__ == "__main__":
+    main2()

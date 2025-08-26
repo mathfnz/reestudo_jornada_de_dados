@@ -1,0 +1,18 @@
+[project]
+name = "jornada-de-dados"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mathfnz_macbook",email = "matheus.fnds20@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandera (>=0.26.0,<0.27.0)",
+    "pandas (>=2.3.2,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
